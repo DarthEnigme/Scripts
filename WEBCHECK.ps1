@@ -8,7 +8,7 @@ while ($true) {
 
         if ($lastHash -ne "" -and $hash -ne $lastHash) {
             Write-Host "⚠️ Change detected on the website!"
-            [console]::beep(800, 500)  # frequency 800Hz, duration 500ms beep
+            [console]::beep(800, 500) 
         } else {
             Write-Host "No change detected. ($((Get-Date)))"
         }
